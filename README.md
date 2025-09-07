@@ -96,3 +96,6 @@ The workflow can be run using the snakefile with the tools installed above.
 ```bash
 snakemake --cores #of cores
 ```
+
+# 🙏 Acknowledgements
+This work was conducted at TWINCORE, Centre for Experimental and Clinical Infection Research, in the Computational Virology department under the supervision of Prof. Chris Lauber.
