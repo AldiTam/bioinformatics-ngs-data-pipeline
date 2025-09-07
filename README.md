@@ -41,7 +41,7 @@ An overview of the bioinformatics pipeline used to process raw SRA data.
 # 🚀 Getting Started
 Follow these instructions to set up the environment and run the workflow.
 
-**1. Environment Setup with Miniconda**
+## 1. Environment Setup with Miniconda
 
 ```bash
 # Create a new conda environment (e.g., named 'sra_workflow_env')
@@ -51,7 +51,7 @@ conda create --name sra_workflow_env
 conda activate sra_workflow_env
 ```
 
-**2. Install Dependencies**
+## 2. Install Dependencies
 
 Install all the required bioinformatics tools into the active Conda environment.
 
@@ -78,7 +78,7 @@ conda install -c bioconda mmseqs2
 conda install -c bioconda fasttree
 ```
 
-**3. Usage**
+## 3. Usage
 The workflow can be run using the snakefile with the tools installed above.
 
 **Step 1: Obtain SRA Accession List**
@@ -90,3 +90,9 @@ The workflow can be run using the snakefile with the tools installed above.
 * Use filters to select the desired data (e.g., RNA, Paired-end, Illumina).
 
 * Click "Send to" -> "File" -> Format "Accession List" to download a ```sra_acc_list.txt``` file.
+
+**Step 2: Run the Workflow**
+* The main pipeline can be executed via the snakefile
+```bash
+snakemake --cores #of cores
+```
